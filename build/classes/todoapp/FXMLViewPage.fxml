@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todoapp.FXMLViewPageController">
+   <children>
+      <ListView fx:id="tasks_listview" fixedCellSize="30.0" layoutX="127.0" layoutY="27.0" onMouseClicked="#pressListViewAction" onMouseDragged="#pressListViewAction" prefHeight="322.0" prefWidth="431.0" />
+      <Button layoutX="228.0" layoutY="361.0" mnemonicParsing="false" onAction="#displayNotes" text="Notes" />
+      <Button fx:id="complete_button" layoutX="316.0" layoutY="361.0" mnemonicParsing="false" onAction="#completeButtonAction" text="Complete" />
+      <Button layoutX="421.0" layoutY="361.0" mnemonicParsing="false" text="Edit" />
+      <MenuButton fx:id="sort_menubutton" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Time">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#sortMenuItemButtonAction" text="Time" />
+          <MenuItem mnemonicParsing="false" onAction="#sortMenuItemButtonAction" text="Title" />
+            <MenuItem mnemonicParsing="false" onAction="#sortMenuItemButtonAction" text="Location" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="ascdesc_menubutton" layoutX="14.0" layoutY="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="DESC">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#ascdescMenuItemButtonAction" text="ASC" />
+            <MenuItem mnemonicParsing="false" onAction="#ascdescMenuItemButtonAction" text="DESC" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todoapp.FXMLInsertPageController">
+   <children>
+      <TextField fx:id="title_text" layoutX="96.0" layoutY="38.0" />
+      <TextField fx:id="location_text" layoutX="96.0" layoutY="80.0" />
+      <TextArea fx:id="notes_text" layoutX="96.0" layoutY="119.0" prefHeight="102.0" prefWidth="149.0" />
+      <Label layoutX="25.0" layoutY="42.0" text="Title" />
+      <Label layoutX="14.0" layoutY="84.0" text="Location" />
+      <Label layoutX="21.0" layoutY="119.0" text="Notes" />
+      <Button fx:id="done_button" layoutX="252.0" layoutY="322.0" mnemonicParsing="false" onAction="#doneButtonAction" prefHeight="50.0" prefWidth="96.0" text="Done" />
+      <DatePicker fx:id="date_picker" layoutX="329.0" layoutY="38.0" onAction="#datePickerAction" />
+      <MenuButton fx:id="hour_menubutton" layoutX="324.0" layoutY="95.0" mnemonicParsing="false" popupSide="RIGHT" text="01">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="01" />
+          <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="02" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="03" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="04" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="05" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="06" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="07" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="08" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="09" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="10" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="11" />
+            <MenuItem mnemonicParsing="false" onAction="#hourMenuItemButtonAction" text="12" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="minute_menubutton" layoutX="395.0" layoutY="95.0" mnemonicParsing="false" popupSide="RIGHT" text="00">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="05" />
+          <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="10" />
+            <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="15" />
+            <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="20" />
+            <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="25" />
+            <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="30" />
+            <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="35" />
+            <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="40" />
+            <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="45" />
+            <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="50" />
+            <MenuItem mnemonicParsing="false" onAction="#minuteMenuItemButtonAction" text="55" />
+        </items>
+      </MenuButton>
+      <Label layoutX="329.0" layoutY="74.0" text="Hour" />
+      <Label layoutX="395.0" layoutY="74.0" text="Minutes" />
+      <Label layoutX="280.0" layoutY="42.0" text="Date" />
+      <MenuButton fx:id="ampm_menubutton" layoutX="462.0" layoutY="95.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="25.0" prefWidth="54.0" text="AM">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#ampmMenuItemButtonAction" text="AM" />
+          <MenuItem mnemonicParsing="false" onAction="#ampmMenuItemButtonAction" text="PM" />
+        </items>
+      </MenuButton>
+      <Label layoutX="469.0" layoutY="72.0" text="AM/PM" />
+   </children>
+</AnchorPane>
